@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>HOME PAGE</title>
+        <meta charset="UTF-8">
+  
+       
+        
+        <link rel="stylesheet" href="Style/style.css">
+    </head>
+    <body>
+        
+        <div class="container">
+            <nav>
+            <form id="form1" name="form1" method="post">
+                    <p>Choose a page to visit:<br>
+                      <select name="select" id="select" onchange="window.location.href=this.value;">
+                        <option value="home.html" selected="selected">Home</option>
+                        <option value="survey.html">Survey</option>
+                        <option value="store.html">Store</option>
+                                     
+                      </select>
+                    </p>
+                </form>
+            </nav>
+            <b>Hi, welcome to my home page! From here you can navigate around using
+            the toggle down button. </b>
+            <b> If you're done, click <a href ='index.html'>here</a> to log out!</b>
+        </div>
+    </body>
+</html>

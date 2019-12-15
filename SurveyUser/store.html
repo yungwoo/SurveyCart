@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="Scripts/model.js"></script>
+        <script src="Scripts/controller.js"></script>   
+        <link rel="stylesheet" href="Style/style.css">
+    </head>
+    
+    <body>
+        <div class = "store">
+            
+           <nav>
+            <form id="form1" name="form1" method="post">
+                <p>Choose a page to visit:<br>
+                  <select name="select" id="select" onchange="window.location.href=this.value;">
+                    <option value="home.html">Home</option>
+                    <option value="survey.html">Survey</option>
+                    <option value="store.html" selected ="selected">Store</option>                                   
+                  </select>
+                </p>
+            </form>
+            </nav>
+            
+            
+            <table style="width:100%">
+                  <tr>
+                    <th>Image</th>  
+                    <th>Item</th>
+                    <th>Description</th>
+                    <th>Cost</th> 
+                    <th>Quantity</th>
+                  </tr>
+                  <tr>
+                    <td><img class ="img" src="Assets/m35cp.jpg" alt="Lakewood M35CP" width ="400" height ="200"></td>  
+                    <td>Lakewood M35CP</td>
+                    <td>Grand concert cutaway with AAA European spruce and Mahogany neck.
+                    One of the world's finest. Made in Germany.</td>
+                    <td>$3,100</td>
+                    <td><input type="number"  id="q1" class="quantity" value="0">
+                        <button type="submit" onclick="addLake();">Update Cart</button> </td>
+                  </tr>
+                  <tr>
+                      <td><img class ="img" src="Assets/jsm20.png" alt="JSM20" width ="400" height ="200"></td>  
+                    <td>Ibanez JSM20</td>
+                    <td>Linden top and maple wood. High quality for it's price range.</td>
+                    <td>$1,000</td>
+                    <td><input type="number"  id="q2" class="quantity" value="0">
+                        <button type="submit" onclick="addGt();">Update Cart</button></td>
+                  </tr>
+                  <tr>
+                      <td> <img class ="img" src="Assets/km184.jpg" alt="KM184" width ="400" height ="200"></td>
+                    <td>Neumann KM184</td>
+                    <td>Small diaphragm condenser microphone. A pristine microphone used 
+                        by industry professionals. Transparent with low self-noise and high SPL 
+                    capability.</td>
+                    <td>$1,500 (2 set)</td>
+                    <td><input type="number"  id="q3" class="quantity" value="0">
+                    <button type="submit" onclick="addkm();">Update Cart</button></td>
+                  </tr>
+                  <tr>
+                      <td><img class ="img" src="Assets/elixir.jpg" alt="Elixir Strings" width ="400" height ="200"></td>
+                      <td>Elixir Strings</td>
+                      <td>Phosphor bronze strings with nanoweb coating technology
+                      to prevent rusting and wear, and sustain longevity and use.</td>
+                      <td>$15</td>
+                      <td><input type="number"  id="q4" class="quantity" value="0">
+                      <button type="submit" onclick="addElix();">Update Cart</button></td>
+                  </tr>
+            </table>
+       
+            
+            <table id="table" style="width:100%">
+              <tr>
+                <th>Item</th>
+                <th>Quantity</th> 
+                <th>Sub/Total</th>
+                <th></th>
+              </tr>
+              <tr>
+                  <td>Lakewood M35CP</td>
+                  <td><p id="lakeq"></p></td>
+                  <td><p id="lakep"></p></td>
+                  <td></td>
+              </tr>
+              <tr>
+                  <td>Ibanez JSM20</td>
+                  <td><p id="jsmq"></p></td>
+                  <td><p id="jsmp"></p></td>
+                  <td></td>
+                  
+              </tr>
+              <tr>
+                  <td>Neumann KM184</td>
+                  <td><p id="kmq"></p></td>
+                  <td><p id="kmp"></p></td>
+                  <td></td>
+                  
+              </tr>
+              <tr>
+                  <td>Elixir Strings</td>
+                  <td><p id="eq"></p></td>
+                  <td><p id="ep"></p></td>
+                  <td></td>
+                  
+              </tr>
+              <tr>
+                  <td>Total:</td>
+                  <td></td>
+                  <td><p id="total"></p></td>
+                  <td><button onclick="tota();">Click for total</button></td>                 
+              </tr>
+            </table>
+            <button onclick ="finish(); toJS();">Click here to checkout!</button>
+                 
+        </div>           
+       
+    </body>
+</html>

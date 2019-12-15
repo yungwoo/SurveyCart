@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        
+        <script src="Scripts/controller.js"></script>
+        
+        
+        <link rel="stylesheet" href="Style/style.css">
+
+    </head>
+        <body>
+            <div id="Page2" class="container">
+                <nav>
+                <form id="form1" name="form1" method="post">
+                    <p>Choose a page to visit:<br>
+                      <select name="select" id="select" onchange="window.location.href=this.value;">
+                        <option value="home.html">Home</option>
+                        <option value="survey.html" selected="selected">Survey</option>
+                        <option value="store.html">Store</option>
+                                  
+                      </select>
+                    </p>
+                </form>
+                </nav>
+
+                <form action ="home.html" method ="POST">             
+                <b>How old are you?</b>
+                <input type="text" placeholder="Answer here" id="quest1"/>
+                <b>How long have you been programming?</b>
+                <input type="text" placeholder="Answer here" id="quest2" />
+                <b>What is your favourite programming language?</b>
+                <input type="text" placeholder="Answer here" id="quest3" />
+                <b>Which web browser do you prefer?</b>
+                <input type="text" placeholder="Answer here" id="quest4" />
+                <b>Mac, Windows, or Linux?</b>
+                <input type="text" placeholder="Answer here" id="quest5" />
+                <b>What food do you like best?</b>
+                <input type="text" placeholder="Answer here" id="quest6" />
+
+                <button onclick="survey()" class ="center"><b>Submit</b></button>
+                </form>
+            </div>
+                  
+        </body>
+        
+</html>

@@ -1,0 +1,81 @@
+body {font-family: Arial, Helvetica, sans-serif}
+body{
+    background-color: cadetblue;
+    overflow-y: scroll;
+}
+
+
+input[type=text], input[type=password]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+ 
+}
+
+button {
+  background-color: #4CAF50;
+  color: black;
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0;
+  border: 2px solid black;
+  cursor: pointer;
+  
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+inline {
+   display:inline-block;
+   margin-right:10px;
+}
+table, th, td {
+  border: 1px solid black;
+
+}
+
+.center{
+  width:100%;
+  display:inline-block;
+  align-items: center;
+  justify-content: center;
+}
+.quantity { 
+	width: 55px; 
+}
+
+.img{
+    
+  padding: 12px 20px;
+  margin: 8px 0;
+  align-items:center;
+  border: 1px solid #d6c278;
+  box-sizing: border-box;
+  
+}
+.store {
+    
+  display:contents;
+  position: relative;
+  align-items:center;  
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+}
+
+.container {
+    
+  position: fixed;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  width: 891px;
+  
+}
+
